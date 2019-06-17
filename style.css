@@ -1,0 +1,38 @@
+h1
+{
+    text-align:center;
+}
+h3
+{
+    background-color:#b8a899;
+    color:black;
+    font-size:1.2em;
+    margin-bottom:0px;
+}
+.billet
+{
+    background-color:#c1a86d;
+    margin-top:0px;
+    padding:12px;
+    border-radius: 3px;
+    color: #ffffff;
+}
+
+
+a {
+  text-decoration: underline;
+  color: "#a00";
+}
+a:visited {
+  color: #844;
+}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: white;
+
+}
+
+nav {
+  background-color: #d3b16c;
+
+}
