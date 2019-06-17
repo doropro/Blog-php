@@ -1,11 +1,9 @@
 <?php
-require('models/model.php');
-require('templates/header.php');
-require('templates/footer.php');
-$post = getPost($_GET['billet']);
-$affichageCom = getComments($_GET['billet']);
-$nxcomment = addComment();
-require('views/post_view.php');
+
+require('header.php');
+require('footer.php');
+require('post_model.php');
+require('post_view.php');
 
 
 /*if (isset($_GET['billet']){

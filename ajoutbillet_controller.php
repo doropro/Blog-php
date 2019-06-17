@@ -1,7 +1,7 @@
 <?php
 
-require('models/model.php');
-require('templates/header.php');
-require('templates/footer.php');
-$nxBillet = addbillet();
-require('views/ajoutbillet_view.php');
+
+require('header.php');
+require('footer.php');
+require('ajoutbillet_model.php');
+require('ajoutbillet_view.php');

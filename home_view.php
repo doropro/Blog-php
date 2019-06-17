@@ -13,13 +13,13 @@ while($donnees = $affichagePosts->fetch()){?>
     <?php echo ($donnees['contenu']);
     ?>
     <br/>
-    <em><a href="controllers/post_controller.php?billet=<?php echo $donnees['id'];//transmet le n°debillet dans l'url ?>">Commentaires</a></em>
-    <em><a href="controllers/modif_controller.php?billet=<?php echo $donnees['id'];?>">Modifier le post</a></em>
+    <em><a href="post_controller.php?billet=<?php echo $donnees['id'];//transmet le n°debillet dans l'url ?>">Commentaires</a></em>
+    <em><a href="modif_controller.php?billet=<?php echo $donnees['id'];?>">Modifier le post</a></em>
   </p>
 </div>
   <?php
   }
   ?>
   <div class="container">
-        <em><a href=controllers/ajoutbillet_controller.php>Ajouter un nouveau post</a></em>
+        <em><a href=ajoutbillet_controller.php>Ajouter un nouveau post</a></em>
   </div>

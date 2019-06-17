@@ -29,7 +29,7 @@
 <?php
 }
 ?>
-<em><a href="controllers/ajoutcom_controller.php?billet=<?php echo $donnees['id'];?>">Ajouter un commentaire</a></em>
+
 </div>
 
 <div class="container mt-5">
