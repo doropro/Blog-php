@@ -1,7 +1,7 @@
 <?php
 
 function addbillet(){
-  require('connect.php');
+  require('connect/connect.php');
   $nxBillet = $bdd->prepare('INSERT INTO billet (titre, contenu) VALUES (:titre, :contenu)');
   $nxBillet->execute(array(
     'titre' => $_GET['titre'],

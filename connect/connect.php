@@ -8,5 +8,3 @@ try
 {
   die('Erreur : '.$bdd->getMessage());
 }
-
-?>

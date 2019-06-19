@@ -19,10 +19,7 @@ h3
 }
 
 
-a {
-  text-decoration: underline;
-  color: "#a00";
-}
+
 a:visited {
   color: #844;
 }

@@ -2,7 +2,7 @@
 
 function getPost($postid){
 
-  require('connect.php');
+  require('connect/connect.php');
   /////////////affichage du post
   $affichagePost = $bdd->prepare('SELECT * FROM billet WHERE id = ?');
   $affichagePost->execute(array($postid));
@@ -10,11 +10,12 @@ function getPost($postid){
 
   return $post;
 }
+
 $post = getPost($_GET['billet']);
 
 function getComments($postid){
 
-  require('connect.php');
+  require('connect/connect.php');
   ////////////affichage des commentaires
   $affichageCom = $bdd->prepare('SELECT auteur, commentaire, date_commentaire FROM commentaire WHERE billet = ? ORDER BY date_commentaire');
   $affichageCom->execute(array($postid));
@@ -26,7 +27,7 @@ $affichageCom = getComments($_GET['billet']);
 
 function addComment (){
 
-    require('connect.php');
+    require('connect/connect.php');
   $nxcomment = $bdd->prepare('INSERT INTO commentaire (billet, auteur, commentaire) VALUES (:billet, :auteur, :commentaire)');
   $nxcomment->execute(array(
     'billet' => $_GET['billet'],
